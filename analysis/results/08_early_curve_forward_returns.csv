@@ -1,0 +1,4 @@
+setup,buys,median_return_24s_pct,average_return_24s_pct,median_return_60s_pct,pct_up_enough_to_clear_2_5pct_fee
+all_early_buys,668412,-6.18,-6.78,-18.16,35.1
+everyone_else,661912,-6.22,-6.88,-18.23,35.0
+scalper_signature,6500,-2.54,3.1,-13.65,40.1

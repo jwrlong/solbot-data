@@ -1,0 +1,30 @@
+
+1. COMPLETENESS
+  PASS  all 208261 produced blocks in 451863358..452071879 stored
+  PASS  no open ingest gaps recorded  -- 0 open
+  PASS  swap count per block matches chain logs (40 random blocks)
+
+2. DECODING (decoded trade vs wallet balance change and pool vaults on-chain)
+  PASS  token amounts match wallet balance changes (77 trades)
+  PASS  PumpSwap post-trade reserves match pool vaults (62 trades)
+  info  18 of 80 sampled rows were stored by an older decoder version (re-decoded above); 0 trades routed tokens through other wallets (checked against the pool vault instead)
+
+3. PRICING (pool math reproduces the next real trade)
+  PASS  pump_swap: median prediction error ~0 (12482193 trades)  -- median 4.17e-06
+  PASS  pump_swap: 99%+ of trades within one fee tier  -- 99.95%
+  PASS  pump_curve: median prediction error ~0 (2544049 trades)  -- median 2.72e-09
+  PASS  pump_curve: 99%+ of trades within one fee tier  -- 99.97%
+
+4. SIMULATED TRADES (best-graduation.csv)
+  PASS  pnl = proceeds - cost for all 131 trades
+  PASS  no liquidity pulled from pools we held (131 trades)
+  PASS  recorded buy/sell prices match on-chain pool (80 legs)
+  PASS  recorded liquidity matches on-chain pool SOL (80 legs)
+
+4. SIMULATED TRADES (early300.csv)
+  PASS  pnl = proceeds - cost for all 44 trades
+  PASS  no liquidity pulled from pools we held (44 trades)
+  PASS  recorded buy/sell prices match on-chain pool (80 legs)
+  PASS  recorded liquidity matches on-chain pool SOL (80 legs)
+
+17/17 checks passed

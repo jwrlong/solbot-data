@@ -1,0 +1,5 @@
+re-simulated 44 trades from chain data (0 skipped: no PumpSwap tx found)
+  tokens received, simulator vs chain: median -0.365%, worst -0.765%
+  profit per trade, simulator - chain: median -0.00355 SOL, mean -0.00282 SOL
+  total profit: simulator +1.9528 SOL, chain re-simulation +2.0770 SOL (difference -0.1241)
+  trades differing by more than 0.01 SOL + 2% of size: 0 []

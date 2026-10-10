@@ -1,0 +1,10 @@
+.DS_Store
+.venv/
+.vendor/
+__pycache__/
+*.pyc
+
+# Original tables and the local database are too large for GitHub.
+data/*.parquet
+db/*.duckdb
+db/*.duckdb.wal

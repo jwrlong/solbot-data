@@ -1,0 +1,10 @@
+venue,fee_band,trades,volume_sol
+pump_curve,0.80-1.10%,864,558.9
+pump_curve,1.23-1.35%,512131,409600.3
+pump_curve,under 0.40%,40424,19166.0
+pump_swap,0.40-0.80%,105984,93651.6
+pump_swap,0.80-1.10%,270438,206099.2
+pump_swap,1.10-1.23%,352237,455690.2
+pump_swap,1.23-1.35%,129631,78404.9
+pump_swap,above 1.35%,1,0.1
+pump_swap,under 0.40%,1534939,4873532.0
