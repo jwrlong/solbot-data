@@ -5,8 +5,9 @@ and PumpSwap (its AMM) over **23.2 hours**: Solana slots **451,863,358 → 452,0
 2026-09-30 04:57 UTC to 2026-10-01 ~04:10 UTC. The data was decoded directly from the chain
 (every block, none missing) by the `solbot` project.
 
-The findings report is in [`FINDINGS.md`](FINDINGS.md). Its supporting tables are in
-`validation/`, and the profitable-wallet study is in `wallets/`.
+The writeup for the trading team is in [`ANALYSIS.md`](ANALYSIS.md).
+The original findings report is in [`FINDINGS.md`](FINDINGS.md). Its supporting
+tables are in `validation/`, and the profitable-wallet study is in `wallets/`.
 
 ## Files (`data/`, Parquet with zstd compression)
 
